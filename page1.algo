@@ -1,0 +1,28 @@
+ALGORITHM checkpoint
+VAR
+  i:INTEGER =0;
+  phrase:STRING="";
+  character:CHAR;
+  lenPh:INTEGER =0;
+  wordNum:INTEGER =0;
+  vowelNum:INTEGER =0;
+  BEGIN
+   repeat
+   read(charachter)
+   lenPh += 1;
+   Phrase += charachter
+   until (charachter == ".")
+    
+  FOR i FROM 0 TO lenth-1 STEP 1 DO
+  IF phrase[i]==" "
+  THEN
+  wordNum:= wordNum+1;
+  IF
+ phrase[i] IN ['0','a', 'y','i','u','e'] then
+ vowelNum:=vowelNum+1;
+END_FOR
+ 
+ write (wordNum);
+ write (lenPh);
+ write (vowelNum);
+END
